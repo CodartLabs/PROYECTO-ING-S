@@ -1,0 +1,16 @@
+- interfaz de login
+- interfaz de registro
+- interfaz home (todas las fotos y galerias)
+- interfaz (solo fotos)
+- interfaz (solo galerias)
+- interfaz de busqueda
+- interfaz detalles de foto
+- interfaz para el perfil de usuario (permite ver que has subido fotos y galerias)
+- interfaz de editar perfil
+- interfaz para subir foto
+- interfaz para crear galeria
+- interfaz para añadir fotos a una galeria
+- interfaz para ver que fotos tiene una galeria (ver y eliminar)
+- interfaz para crear blogs
+- interfaz para ver guardados o guardados (ver y eliminar)
+

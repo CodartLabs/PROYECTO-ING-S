@@ -1,0 +1,19 @@
+.custom-main, p{
+text-align: center;
+align-items: center;
+margin: 0 auto;
+}
+h1{
+    color : black;
+    font-size: 5rem;
+}
+
+h3{
+    font-family:sans-serif; 
+}
+p{
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    max-width:800px;
+
+}

@@ -1,0 +1,44 @@
+body{
+  align-items: center;
+
+}
+.grid-container {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 20px;*/
+
+    justify-content: center; 
+    padding-top: 45px;
+    position: relative;
+    width: 90vw;
+
+  
+    margin: 0 auto;
+  }
+  
+  .grid-item {
+    width: 240px;
+    max-height: 170px;
+    object-fit: cover;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    cursor: zoom-in;
+    background-color: black;
+    align-items:  center; 
+  }
+  .grid-item img{
+    width:100%;
+  }
+  
+  .grid-item:hover {
+    filter: opacity(0.9);
+  }
+
+.perfil{
+	height: 25px;
+	width: auto;
+  padding-right: 5px;
+}
+.custom-main{
+  padding-top:20px
+}
