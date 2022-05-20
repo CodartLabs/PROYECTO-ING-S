@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="assets/css/login.css">
 <?php
 if($_POST){
     $error = "";
@@ -15,8 +16,44 @@ if($_POST){
         '$fecha','$direccion','$sobre_mi');";
 
         include_once "conexion.php";
-         if(mysqli_query($conexion,$sql)) echo "alert('Actualizado Correctamente')";
-         else $error = "Usuario ya existe, prueba con otro";
+
+        try {
+            if(mysqli_query($conexion,$sql)) { 
+                ?>
+                <div class="modal-contenido" *ngIf="true">
+                    <a href="register.php" title="Close" class="close">X</a>
+                    <h2 class="ok">REGISTRO EXITOSO</h2>
+                    <p>¿Que desea hacer?</p>
+                    <a href="register.php" class="buttonb button1">Registrarse</a>
+                    <a href="login.php" class="buttonb button2">Iniciar Sesión</a>
+                    
+                </div>  
+                <?php
+            }else {
+                ?>
+                <div class="modal-contenido" *ngIf="true">
+                   <a href="register.php" title="Close" class="close">X</a>
+                   <h2 class="error">ERROR AL REGISTRAR</h2>
+                   <p>El Usuario ya existe, pruebe con otro.</p>
+                   <a href="register.php" class="buttonb button3">Cerrar</a>
+               </div>
+               <?php  
+            }
+        } catch (\Throwable $th) {
+            ?>
+                <div class="modal-contenido" *ngIf="true">
+                   <a href="register.php" title="Close" class="close">X</a>
+                   <h2 class="error">ALGO SALIO MAL</h2>
+                   <p>Al Parecer el Usuario ya existe, pruebe con otro.</p>
+                   <a href="register.php" class="buttonb button3">Cerrar</a>
+               </div>
+               <?php 
+        }
+
+         
+         
+
+         echo "";
 
 
     }else $error = "Los campos están vacíos";
@@ -24,3 +61,4 @@ if($_POST){
 
 
 ?>
+

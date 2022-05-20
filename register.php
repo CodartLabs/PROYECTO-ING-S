@@ -56,5 +56,7 @@
          <p>¿Ya tienes una cuenta?<a class="link" href="login.php">Iniciar Sesion</a></p>
      </div>
     </form>
+
 </body>
 </html>
+
