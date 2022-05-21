@@ -19,6 +19,99 @@ body {
     color: #404040;
     font-family: "Arial", Segoe UI, Tahoma, sans-serifl, Helvetica Neue, Helvetica;
 }
+/* ------------------------------------- */
+
+#modal {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+  }
+
+  #mensajeConforme{
+    background-color:none;
+    position: absolute;
+    text-align: center !important;
+    left: -100px;
+    top: 38%;
+    margin: 20px;
+    width:300px;
+    color: #A5A5A5;
+    /* background-color: white; */
+    border: 1px solid #A5A5A5;
+    border-radius: 5px;
+
+    font-family: Arial, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    visibility: hidden;
+  } 
+
+  .ok{
+      color: #04FD04;
+      font-weight: bold;
+  }
+  .error{
+      color: #FF3814;
+      font-weight: bold;
+  }
+
+  .close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:3px;
+ 
+}
+ 
+.close:hover {
+    background: #FAAC58;
+    color:#222;
+}
+
+.buttonb {
+    background-color: #4CAF50 !important; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button1 {
+    background-color: white !important;
+    color: #999 !important;
+    border: 1.5px solid #04FD04 !important;
+}
+.button2 {
+    background-color: #04FD04;
+    color: white !important;
+} 
+
+.button3 {
+    background-color: #FF3814 !important;
+    text-decoration: none !important;
+} 
+.button3:hover{
+    color: white !important;
+}
+/* ------------------------------------- */
 
 .seccion-perfil-usuario .perfil-usuario-body,
 .seccion-perfil-usuario {
@@ -80,6 +173,9 @@ body {
     width: 100%;
     position: relative;
     border-radius: 50%;
+}
+#file{
+    display: none !important;
 }
 
 .seccion-perfil-usuario .perfil-usuario-avatar .boton-avatar {
@@ -257,3 +353,4 @@ body {
         flex-direction: column;
     }
 }
+

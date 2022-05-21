@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/perfil.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/perfil.css?3">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 <body>
@@ -27,8 +27,28 @@
                     include_once "controladores/comprobar_sesion.php";
                     if (estaLogeado()){
                     if ($profile == $_SESSION['id_usuario'] ){?>
-                    <a href="editar_perfil.php"> <div class="boton-avatar">
-                        <i class="fas fa-pen"></i> </a>
+
+                    <!-- FORM PARA ENVIAR Y GUARDAR FOTO USUARIO -->
+                    <form method="post" action="cargar_foto.php" enctype="multipart/form-data">
+                        <input type="file" name="archivo" id="file" style="display:none;" accept=".png, .jpeg, .jpg" onclick="mostrar()">
+                        <label for="file" class="boton-avatar">
+                            <a>
+                            <!-- <div class="boton-avatar"> -->
+                            <i class="fas fa-pen" for="file"></i> 
+                            </a>
+                        </label>
+                        <div class="modal-contenido" id="mensajeConforme">
+                            <a title="Close" class="close" onclick="ocultar()">X</a>
+                            <h2 class="ok">SUBIENDO FOTO</h2>
+                            <p>¿Que desea hacer?</p>
+                            <a class="buttonb button3" onclick="ocultar()">Cancelar</a>
+                            <button type="submit" class="buttonb button2">Guardar</button>
+                            <input style="visibility:hidden;" value="<?php echo $_SESSION['id_usuario'] ?>" name="valorid"></input>
+                         </div>  
+                    </form>
+
+                    <!-- <a href="editar_perfil.php"> <div class="boton-avatar">
+                        <i class="fas fa-pen"></i> </a> -->
                     </div> <?php	} }?>
                 </div>
                
@@ -70,4 +90,18 @@
         </div>
     </section>
 </body>
+<script>
+function mostrar() {
+  identificadorTiempoDeEspera = setTimeout(retraso, 3000);
+}
+function retraso(){
+    var campo = document.getElementById("mensajeConforme");
+        campo.style.visibility = "visible";
+}
+function ocultar(){
+    var campo = document.getElementById("mensajeConforme");
+        campo.style.visibility = "hidden";
+}
+</script>
 </html>
+
