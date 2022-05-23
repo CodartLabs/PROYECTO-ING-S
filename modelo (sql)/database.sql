@@ -10,7 +10,8 @@ CREATE TABLE usuarios(
     nacimiento DATE NOT NULL,
     direccion TEXT NOT NULL,
     sobre_mi TEXT NULL,
-    foto TEXT NULL
+    foto TEXT NULL,
+    administrador int default 0
     );
 CREATE TABLE correos(
 	id_usuario BIGINT NOT NULL,
@@ -98,7 +99,7 @@ STORED PROCEDURES
 
 /*LOGIN*/
 CREATE PROCEDURE login(IN user VARCHAR (50), IN pass VARCHAR(250))
-SELECT id_usuario, username, nombres, apellidos, foto FROM usuarios WHERE username = user and password = pass LIMIT 1;
+SELECT id_usuario, username, nombres, apellidos, foto, administrador FROM usuarios WHERE username = user and password = pass LIMIT 1;
 
 /*REGISTRAR*/
 CREATE PROCEDURE registrar (IN user VARCHAR (50), IN pass VARCHAR(250), IN nomb VARCHAR(100), IN ape VARCHAR(100), IN nac DATE, IN dir TEXT, IN sobre TEXT )

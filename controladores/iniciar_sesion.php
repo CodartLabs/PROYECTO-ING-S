@@ -15,6 +15,7 @@ if ($_POST){
                 $nombres = $row['nombres'];
                 $apellidos = $row['apellidos'];
                 $foto_perfil = $row['foto'];
+                $administrador = $row['administrador'];
             }
             if($foto_perfil==null)$foto_perfil = 'assets/users/default.png';
             else{
@@ -26,6 +27,8 @@ if ($_POST){
             $_SESSION['nombres']=$nombres;
             $_SESSION['apellidos']=$apellidos;
             $_SESSION['foto_perfil']= $foto_perfil;
+            $_SESSION['administrador'] = $administrador;
+            echo $_SESSION['administrador'];
 
             header("Location: index.php");
          } else $error = "Usuario o contraseña incorrecta";
