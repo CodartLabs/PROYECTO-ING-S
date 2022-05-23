@@ -12,7 +12,7 @@
     $idFoto = $_GET['id'];
     $delete = $conexion ->query("UPDATE fotos SET estado=1 WHERE id_foto=$idFoto");
     if($delete == true){
-      $mensaje = 'La imagen fué eliminado correctamente !';
+      $mensaje = 'La imagen fue eliminada correctamente !';
       $style = 'success';
     }else{
       $mensaje = 'Ha sucedido un error !';
@@ -25,7 +25,7 @@
   <div class="grid-container fotos-populares m-5">
     <div class="container">
         <h2>Todas mis fotos</h2>
-        <!-- 🔥🔥 ALERTA  -->
+        <!--  ALERTA  -->
         <?php if(isset($mensaje)) { ?>
         <div class="alert alert-<?=$style;?> alert-dismissible fade show" role="alert">
           <?=$mensaje; ?>
@@ -43,7 +43,7 @@
                     <img src="assets/fotos/<?= $item['archivo'] ?>" class="card-img-top" alt="Img" height="100%">
                   </div>
                   <div class="card-footer">
-                    <a href="eliminar_foto.php?id=<?= $item['id_foto'] ?>" class="btn btn-danger btn-block" name="btnEliminar"> ELiminar
+                    <a href="eliminar_foto.php?id=<?= $item['id_foto'] ?>" class="btn btn-danger btn-block" name="btnEliminar"> Eliminar
                     <i class="fa-solid fa-trash"></i>
                     </a>
                   </div>

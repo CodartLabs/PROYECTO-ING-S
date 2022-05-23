@@ -30,6 +30,7 @@ CREATE TABLE fotos(
     titulo VARCHAR(100) NOT NULL,
     descripcion TEXT NULL,
     visualizaciones BIGINT NOT NULL DEFAULT 0,
+    estado binary default 0,
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario),
     FOREIGN KEY (id_categoria) REFERENCES categorias(id_categoria)
     );
@@ -124,7 +125,7 @@ UPDATE fotos SET archivo = in_archivo WHERE id_foto = in_id_foto;
 CREATE PROCEDURE obtener_todas_fotos ()
 SELECT id_foto, username, nombre_categoria,archivo, fecha_foto, titulo, descripcion, visualizaciones
 FROM fotos INNER JOIN categorias ON categorias.id_categoria = fotos.id_categoria 
-INNER JOIN usuarios ON usuarios.id_usuario =fotos.id_usuario
+INNER JOIN usuarios ON usuarios.id_usuario =fotos.id_usuario where estado = 0
 ORDER BY visualizaciones DESC;
 
 /*OBTENER TODAS LAS FOTOS DE UN USUARIO */
@@ -170,7 +171,7 @@ VALUES (in_id_usuario, in_id_categoria, in_archivo, in_fecha_foto, in_titulo, in
 
 /*OBTENER POPULARES POR COOKIE */
 CREATE PROCEDURE fotos_cookies(in_id_categoria BIGINT)
-SELECT * FROM fotos where id_categoria =in_id_categoria ORDER BY RAND() LIMIT 5;
+SELECT * FROM fotos where id_categoria =in_id_categoria and estado = 0 ORDER BY RAND() LIMIT 5;
 
 /*OBTENER MAS INTERACTUADAS */
 CREATE PROCEDURE fotos_interaccion()
@@ -226,7 +227,7 @@ WHERE usuarios.id_usuario =in_id_usuario LIMIT 1;
 CREATE PROCEDURE recientes()
 SELECT id_foto, username, nombre_categoria,archivo, fecha_foto, titulo, descripcion,
  visualizaciones FROM fotos INNER JOIN categorias ON categorias.id_categoria = fotos.id_categoria
-  INNER JOIN usuarios ON usuarios.id_usuario =fotos.id_usuario 
+  INNER JOIN usuarios ON usuarios.id_usuario =fotos.id_usuario where estado = 0
   ORDER BY fecha_foto DESC LIMIT 5;
 /*OBTENER LOS CORREOS*/
 /*AGREGAR CORREOS*/
