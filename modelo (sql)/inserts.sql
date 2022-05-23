@@ -24,7 +24,7 @@ INSERT INTO usuarios (username, password, nombres, apellidos, nacimiento, direcc
 INSERT INTO usuarios (username, password, nombres, apellidos, nacimiento, direccion, sobre_mi,foto, administrador) VALUES('Aileen','QNL84LGA9FB','Aileen','Schneider','1996-10-06','938-2790 Ultrices St.',null, '19.jpg', 1);
 INSERT INTO usuarios (username, password, nombres, apellidos, nacimiento, direccion, sobre_mi,foto, administrador) VALUES('carrol','SRB18ILN6SA','Kyla','Carroll','1996-05-28','P.O. Box 590, 1309 Lobortis Rd.',null, '20.jpg', 1);
 /*INSERTANDO PROFESOR*/
-INSERT INTO usuarios (username, password, nombres, apellidos, nacimiento, direccion, sobre_mi,foto) VALUES('Profesor','profesoraplicacionesdesoftware','Arturo','Diaz Pulido','2021-08-14','P.O. Box 590, 1309 Lobortis Rd.','Profesor del área de aplicaciones de software en la Universidad Nacional de Cañete','21.jpg');
+INSERT INTO usuarios (username, password, nombres, apellidos, nacimiento, direccion, sobre_mi,foto) VALUES('Profesor','profesor','Wagner','Vicente Ramos','2021-08-14','P.O. Box 590, 1309 Lobortis Rd.','Profesor del área de Ingenieria de software en la Universidad Nacional de Cañete','21.jpg');
 
 /*---------------------------------------------------
 INSERTANDO FOTOS
