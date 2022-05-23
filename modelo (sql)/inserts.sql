@@ -56,7 +56,7 @@ CALL inicializar_fotos(10,7,'10.jpg','2021/06/17','Las galaxias','Imaginate si p
 CALL inicializar_fotos(11,1,'11.jpg','2021/06/18','Hongo rojo','La naturaleza nos sorprende cada día',35);
 CALL inicializar_fotos(12,3,'12.jpg','2021/06/18','Respiracion profunda','Un momento para sentir paz en el atardecer frente al mar',48);
 CALL inicializar_fotos(13,8,'13.jpg','2021/06/10','Fotografa amateur','He viajado por muchos lugares del mundo y me gusta tomar fotografias por todos lados',39);
-CALL inicializar_fotos(14,8,'14.png','2021/06/8','En el transito','Me he quedado mirando la velocidad de los taxis en New York y le di un retoque de velocidad a esta foto',47);
+CALL inicializar_fotos(14,8,'14.jpg','2021/06/8','En el transito','Me he quedado mirando la velocidad de los taxis en New York y le di un retoque de velocidad a esta foto',47);
 CALL inicializar_fotos(15,9,'15.jpg','2021/06/11','Robotic','La NASA envia a robotic a explorar el territorio marciano',39);
 CALL inicializar_fotos(16,8,'16.jpg','2021/06/11','La paparazzi','Me gusta ver a los personajes de farandula en momentos donde ellos creen que no los estamos observando',70);
 CALL inicializar_fotos(17,3,'17.jpeg','2021/06/12','Saltanto en la arena','Ha sido un dia espectacular la pase super bien al lado de mi mejor amiga',43);
