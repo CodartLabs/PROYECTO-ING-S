@@ -24,12 +24,6 @@
         <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Fotos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Galerías</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="blogs.php">Blogs</a>
       </li>
 
@@ -43,7 +37,6 @@
         <span class="caret"></span></button>
         <ul class="dropdown-menu">
           <li><a href="profile.php?profile_id=<?php echo $_SESSION["id_usuario"];?>">Mi perfil</a></li>
-          <li><a href="#">Guardados</a></li>
           <?php if(esAdmin()) echo '<li><a href="upload.php">Subir fotos</a></li>
           <li><a href="crear_blog.php">Crear blog</a></li>
           <li><a href="eliminar_foto.php">Eliminar fotos</a></li>' ?>
