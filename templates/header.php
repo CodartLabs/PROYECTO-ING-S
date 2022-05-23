@@ -46,7 +46,7 @@
           <li><a href="#">Guardados</a></li>
           <li><a href="upload.php">Subir fotos</a></li>
           <li><a href="crear_blog.php">Crear blog</a></li>
-          <li><a href="#">Mis fotos</a></li>
+          <li><a href="eliminar_foto.php">Eliminar fotos</a></li>
           <li><a href="controladores/cerrar_sesion.php">Cerrar sesión</a></li>
         </ul>
       </div>
