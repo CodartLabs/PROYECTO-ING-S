@@ -47,7 +47,7 @@ CALL inicializar_fotos(1,1,'1.jpg','2021/06/11','Volcan Misti','Esta es la mejor
 CALL inicializar_fotos(2,2,'2.jpg','2021/06/11','Recibiendo el año nuevo','En esta foto muestro como recibí el año nuevo 2021 fue un día muy bonito y la vista es increible',40);
 CALL inicializar_fotos(3,3,'3.jpg','2021/06/12','Puedo tocar el sol','En esta increible foto se ve nuestro magnífico sol, es muy impactante',45);
 CALL inicializar_fotos(4,4,'4.jpg','2021/06/14','Vive la vida a full color','Arte abstracto a base de acuarelas en el que empleo una gran diversidad de colores',48);
-CALL inicializar_fotos(5,5,'5.jpg','2021/06/14','Chica fans','Un retrato de color diferente',45);
+CALL inicializar_fotos(5,5,'5.png','2021/06/14','Chica fans','Un retrato de color diferente',45);
 CALL inicializar_fotos(6,6,'6.jpg','2021/06/6','Machupicchu','La maravilla del Perú para el Mundo',34);
 CALL inicializar_fotos(7,3,'7.jpg','2021/06/16','Mar y arena','Cuando el mar se atreve a besar la arena',67);
 CALL inicializar_fotos(8,3,'8.jpg','2021/06/17','Cielo de fuego','Una fotografia espectacular con efecto solar',79);
