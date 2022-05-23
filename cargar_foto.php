@@ -19,10 +19,10 @@ if($_FILES["archivo"]){
         $result = mysqli_query($conexion, $sql);
         if($result){
             echo "<script>alert('Se registro foto');</script>";
-            header('Location:' . getenv('HTTP_REFERER'));
+            header('Location: ' . $_SERVER['HTTP_REFERER']);
         } else{
             print("Errormessage: %s\n". mysqli_error($conexion));
-            header('Location:' . getenv('HTTP_REFERER'));
+            header('Location: ' . $_SERVER['HTTP_REFERER']);
         }
     
     }
