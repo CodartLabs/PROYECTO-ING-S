@@ -43,7 +43,8 @@
                     <img src="assets/fotos/<?= $item['archivo'] ?>" class="card-img-top" alt="Img" width="100%" object-fit="cover">
                   </div>
                   <div class="card-footer">
-                    <a href="eliminar_foto.php?id=<?= $item['id_foto'] ?>" class="btn btn-danger btn-block" name="btnEliminar"> Eliminar
+                    <a href="#" class="btn btn btn-block" > <b>Cod. Imagen:  </b> <?php echo $item['id_foto']?>
+                    <a href="#" class="btn btn btn-block" > <b>Nro. Vistas: </b> <?php echo $item['visualizaciones']?>
                     <i class="fa-solid fa-trash"></i>
                     </a>
                   </div>

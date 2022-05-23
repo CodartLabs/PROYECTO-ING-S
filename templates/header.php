@@ -39,6 +39,7 @@
           <li><a href="profile.php?profile_id=<?php echo $_SESSION["id_usuario"];?>">Mi perfil</a></li>
           <?php if(esAdmin()) echo '<li><a href="upload.php">Subir fotos</a></li>
           <li><a href="crear_blog.php">Crear blog</a></li>
+          <li><a href="estadistica.php">Estadisticas</a></li>
           <li><a href="eliminar_foto.php">Eliminar fotos</a></li>' ?>
           <li><a href="controladores/cerrar_sesion.php">Cerrar sesión</a></li>
         </ul>
