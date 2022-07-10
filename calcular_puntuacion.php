@@ -41,23 +41,17 @@ if (isset($_POST['crear'])) {
 
        try{
         if(mysqli_query($conexion,$insertar_dato)) { 
-            ?>
-            <div class="modal-contenido" *ngIf="true">
-                <a href="calcular_puntuacion.php" title="Close" class="close">X</a>
-                <h2 class="ok">ENCUESTA REGISTRADA</h2>
-                <h4 class="ok">Gracias por su tiempo.</h4>
-                <a href="index.php" class="buttonb button1">Volver al Inicio</a>
-                
-            </div>  
-            <?php
+            header("Location: encuesta.php");
+            
         }else {
+            header('Location: ' . $_SERVER['HTTP_REFERER']);
             ?>
-            <div class="modal-contenido" *ngIf="true">
+            <!-- <div class="modal-contenido" *ngIf="true">
                <a href="index.php" title="Close" class="close">X</a>
                <h2 class="error">ERROR AL REGISTRAR ENCUESTA</h2>
                <p>Ha ocurrido un error, por favor inténtelo de nuevo más tarde</p>
                <a href="index.php" class="buttonb button3">Cerrar</a>
-           </div>
+           </div> -->
            <?php  
         }
     }catch(\Throwable $th) {
@@ -73,6 +67,23 @@ if (isset($_POST['crear'])) {
     }
 
 }
-include "encuesta.php";
 
 ?>
+<script>
+function ocultar(){
+    var campo = document.getElementById("mensajeConforme");
+        campo.style.visibility = "hidden";
+}
+</script>
+
+
+
+
+<!-- div class="modal-contenido" *ngIf="true" id="mensajeConforme">
+                <a  title="Close" class="close" onclick="ocultar()">X</a>
+                <h2 class="ok">ENCUESTA REGISTRADA</h2>
+                <h4 class="ok">Gracias por su tiempo.</h4>
+                <a href="index.php" class="buttonb button1">Volver al Inicio</a>
+                <a class="buttonb button1" onclick="ocultar()">Quedarme aquí</a>
+                
+            </div>   -->

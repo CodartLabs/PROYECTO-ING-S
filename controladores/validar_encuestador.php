@@ -24,6 +24,7 @@ $data9=0;
 $data10=0;
 $totalPuntaje=0;
 $_SESSION['display'] = 'none';
+$passed;
 
     //Consulta sql para consulta datos
 	$consulta = "SELECT * FROM encuesta WHERE id_usuario = '$id'";
