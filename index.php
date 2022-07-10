@@ -15,14 +15,17 @@
 
 	<div class="custom-main">
 
+  <?php if(estaLogeado()){
+    ?>
     <center>
-  <div id="alerta_encuesta">
-  <p>¿Deseas contestar una breve encuesta para ayudarnos a mejorar nuestros servicios? 
-    ¡Sólo te tomará 5 minutos!</p>
-  <a href="encuesta.php" class="ir_encuesta">Responder encuesta</a>
-  </div>
-  <p class="pequenio">Si ya lo hiciste, ignora este mensaje.</p>
-    </center>
+    <div id="alerta_encuesta">
+    <p>¿Deseas contestar una breve encuesta para ayudarnos a mejorar nuestros servicios? 
+      ¡Sólo te tomará 5 minutos!</p>
+    <a href="encuesta.php" class="ir_encuesta">Responder encuesta</a>
+    </div>
+    <p class="pequenio">Si ya lo hiciste, ignora este mensaje.</p>
+      </center>
+  <?php } ?>
 
   <div class="grid-container fotos-recomendadas">
       <h2>Productos que te pueden gustar</h2>
