@@ -36,12 +36,12 @@
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> <img class = "perfil" src=<?php echo $foto; ?> alt="Imagen de perfil de usuario"><?php echo $_SESSION ['nombres']; echo" ". $_SESSION['apellidos'];?>
         <span class="caret"></span></button>
         <ul class="dropdown-menu">
-          <li><a href="profile.php?profile_id=<?php echo $_SESSION["id_usuario"];?>">Mi perfil</a></li>
+          <li><a class="btn  btn-block godoy"class="btn  btn-block godoy" href="profile.php?profile_id=<?php echo $_SESSION["id_usuario"];?>">Mi perfil</a></li>
           <?php if(esAdmin()) echo '<li><a href="upload.php">Subir fotos</a></li>
-          <li><a href="crear_blog.php">Crear blog</a></li>
-          <li><a href="estadistica.php">Estadisticas</a></li>
-          <li><a href="eliminar_foto.php">Eliminar fotos</a></li>' ?>
-          <li><a href="controladores/cerrar_sesion.php">Cerrar sesión</a></li>
+          <li><a class="btn  btn-block godoy" href="crear_blog.php">Crear blog</a></li>
+          <li><a class="btn  btn-block godoy" href="estadistica.php">Estadisticas</a></li>
+          <li><a class="btn  btn-block godoy" href="eliminar_foto.php">Eliminar fotos</a></li>' ?>
+          <li><a class="btn  btn-block godoy" href="controladores/cerrar_sesion.php">Cerrar sesión</a></li>
         </ul>
       </div>
       <?php }
