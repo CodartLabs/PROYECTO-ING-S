@@ -42,7 +42,7 @@
         <span class="caret"></span></button>
         <ul class="dropdown-menu">
           <li><a class="btn  btn-block godoy"class="btn  btn-block godoy" href="profile.php?profile_id=<?php echo $_SESSION["id_usuario"];?>">Mi perfil</a></li>
-          <?php if(esAdmin()) echo '<li><a href="upload.php">Subir fotos</a></li>
+          <?php if(esAdmin()) echo '<li><a class="btn btn-block godoy" href="upload.php">Subir fotos</a></li>
           <li><a class="btn  btn-block godoy" href="crear_blog.php">Crear blog</a></li>
           <li><a class="btn  btn-block godoy" href="estadistica.php">Estadisticas</a></li>
           <li><a class="btn  btn-block godoy" href="eliminar_foto.php">Eliminar fotos</a></li>' ?>

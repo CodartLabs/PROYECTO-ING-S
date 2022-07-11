@@ -14,3 +14,20 @@
   height:20px;
   width:20px;
 }
+/*MODIFICACION*/
+
+.godoy{
+  color: white;
+
+}
+
+.godoy:hover{
+  color:rgb(204, 141, 183);
+}
+
+.disclaimer{
+    visibility: hidden !important;
+}
+.dropdown-menu{
+    background: gray !important;}
+  
