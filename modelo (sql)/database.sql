@@ -235,3 +235,20 @@ SELECT id_foto, username, nombre_categoria,archivo, fecha_foto, titulo, descripc
 /*VALORAR FOTO*/
 /*AGREGAR FOTOS A FAVORITO*/
 /*VER FOTOS FAVORITAS*/
+
+CREATE TABLE encuesta(
+    id_encuesta BIGINT PRIMARY KEY AUTO_INCREMENT,
+    id_usuario INT NULL,
+    p1 INT NOT NULL,
+    p2 INT NOT NULL,
+    p3 INT NOT NULL,
+    p4 INT NOT NULL,
+    p5 INT NOT NULL,
+    p6 INT NOT NULL,
+    p7 INT NOT NULL,
+    p8 INT NOT NULL,
+    p9 INT NOT NULL,
+    p10 INT NOT NULL,
+    fecha_reg VARCHAR(50),
+    resultado FLOAT NULL
+    );
