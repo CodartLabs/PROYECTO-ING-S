@@ -29,23 +29,40 @@
 			</table><br>
 		</div>
 		<div id="text">
-			<?php 
-			if($totalPuntaje>70){
-				echo '<span>Según su apreciación nuestro Sitio Web tiene una escala de Usabilidad de <b>';
-				echo $totalPuntaje;
-				echo '</b> Puntos, considerandola en un estado <p style="color:#64ff00;"><b>ACEPTABLE.</b></p></span>';
-				}
-			if($totalPuntaje>=50 && $totalPuntaje<=70){
-				echo '<span>Según su apreciación nuestro Sitio Web tiene una escala de Usabilidad de <b>';
-				echo $totalPuntaje;
-				echo '</b> Puntos, considerandola en un estado <p style="color:#fc7800;"><b>MARGINAL.</b></p></span>';
-				}
-			if($totalPuntaje<50){
-				echo '<span>Según su apreciación nuestro Sitio Web tiene una escala de Usabilidad de <b>';
-				echo $totalPuntaje;
-				echo '</b> Puntos, considerandola en un estado <p style="color:#ff0000;"><b>NO ACEPTABLE.</b></p></span>';
-				}
-
-			?>
+			<table class="table_range">
+				<tr>
+					<td colspan="2" class="header_c">Representación de los resultados de un SUS</td>
+				</tr>
+				<tr>
+					<td class="celda_c">Porcentile range</td>
+					<td class="celda_c">Acceptable</td>
+				</tr>
+				<tr>
+					<td class="celda">< 70 - <= 100</td>
+					<td class="celda">Acceptable</td>
+				</tr>
+				<tr>
+					<td class="celda"> <= 50- <= 70</td>
+					<td class="celda">Marginal</td>
+				</tr>
+				<tr>
+					<td class="celda"> < 50 </td>
+					<td class="celda">Inaceptable</td>
+				</tr>
+			</table>
+	
+			<table class="table_range">
+				<tr>
+					<td colspan="2" class="header_c">Resultados Mapeados</td>
+				</tr>
+				<tr>
+					<td class="celda">Personas Encuestadas:</td>
+					<td class="celda"><b><?php echo "$numEncuestados" ?></b></td>
+				</tr>
+				<tr>
+					<td class="celda">Puntaje:</td>
+					<td class="celda"><b><?php echo "$totalPuntaje" ?></b></td>
+				</tr>
+			</table>
 		</div>
 </div>

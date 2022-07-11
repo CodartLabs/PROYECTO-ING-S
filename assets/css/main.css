@@ -20,6 +20,11 @@
   color: white;
 
 }
+.godoy_enc{
+  color: white;
+  font-weight: 400;
+  background: #FC6300;
+}
 
 .godoy:hover{
   color:rgb(204, 141, 183);

@@ -9,7 +9,7 @@
     <script src="assets/bootstrap/bootstrap.bundle.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/bootstrap/bootstrap.js"></script>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css?v1">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top custom-nav">
@@ -45,7 +45,9 @@
           <?php if(esAdmin()) echo '<li><a class="btn btn-block godoy" href="upload.php">Subir fotos</a></li>
           <li><a class="btn  btn-block godoy" href="crear_blog.php">Crear blog</a></li>
           <li><a class="btn  btn-block godoy" href="estadistica.php">Estadisticas</a></li>
-          <li><a class="btn  btn-block godoy" href="eliminar_foto.php">Eliminar fotos</a></li>' ?>
+          <li><a class="btn  btn-block godoy" href="eliminar_foto.php">Eliminar fotos</a></li>
+          <li><a class="btn  btn-block godoy_enc" href="resultado_encuesta.php">Resultado Encuesta</a></li>
+          ' ?>
           <li><a class="btn  btn-block godoy" href="controladores/cerrar_sesion.php">Cerrar sesión</a></li>
         </ul>
       </div>
