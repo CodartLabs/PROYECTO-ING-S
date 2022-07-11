@@ -19,7 +19,8 @@ if ($_POST){
             }
             if($foto_perfil==null)$foto_perfil = 'assets/users/default.png';
             else{
-            if (file_exists("assets/users/$foto_perfil")) $foto_perfil = "assets/users/$foto_perfil";
+            if (file_exists("assets/users/$foto_perfil")) $foto_perfil =
+             "assets/users/$foto_perfil";
             else $foto_perfil = 'assets/users/default.png';}
             session_start();
             $_SESSION['id_usuario']=$id_usuario;

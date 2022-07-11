@@ -19,6 +19,12 @@
   <a class="navbar-brand" href="index.php">PhotoStock</a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+  <?php 
+    include_once "controladores/comprobar_sesion.php";
+    if(estaLogeado()){
+      $foto = $_SESSION['foto_perfil'];
+    ?>
+
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
         <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
@@ -26,12 +32,11 @@
       <li class="nav-item">
         <a class="nav-link" href="blogs.php">Blogs</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="encuesta.php?profile_id=<?php echo $_SESSION["id_usuario"];?>">Encuesta</a>
+      </li>
 
-    <?php 
-    include_once "controladores/comprobar_sesion.php";
-    if(estaLogeado()){
-      $foto = $_SESSION['foto_perfil'];
-    ?>
+    
       <div class="dropdown">
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> <img class = "perfil" src=<?php echo $foto; ?> alt="Imagen de perfil de usuario"><?php echo $_SESSION ['nombres']; echo" ". $_SESSION['apellidos'];?>
         <span class="caret"></span></button>

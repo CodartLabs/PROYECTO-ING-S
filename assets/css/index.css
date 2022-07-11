@@ -42,3 +42,28 @@ body{
 .custom-main{
   padding-top:20px
 }
+#alerta_encuesta{
+  margin-top: 20px;
+  width: 70%;
+  background-color: #343a40 ;
+  height: 80px;
+  border-radius: 10px;
+  color: white;
+}
+.ir_encuesta{
+  text-decoration: none !important;
+  border: 1px solid #FC6300;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #FC6300;
+  font-weight: 700;
+  color: #343a40 !important;
+  transition: 0.5s;
+}
+.pequenio{
+  margin-top: 5px;
+}
+.ir_encuesta:hover{
+  border: 1px solid #FF9048;
+  background-color: #FF9048;
+}

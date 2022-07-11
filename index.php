@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
-	<link rel="stylesheet" href="assets/css/index.css">
+	<link rel="stylesheet" href="assets/css/index.css?v1">
 	<title>PhotoStock</title>
 </head>
 <body>
@@ -14,6 +14,18 @@
 
 
 	<div class="custom-main">
+
+  <?php if(estaLogeado()){
+    ?>
+    <center>
+    <div id="alerta_encuesta">
+    <p>¿Deseas contestar una breve encuesta para ayudarnos a mejorar nuestros servicios? 
+      ¡Sólo te tomará 5 minutos!</p>
+    <a href="encuesta.php" class="ir_encuesta">Responder encuesta</a>
+    </div>
+    <p class="pequenio">Si ya lo hiciste, ignora este mensaje.</p>
+      </center>
+  <?php } ?>
 
   <div class="grid-container fotos-recomendadas">
       <h2>Productos que te pueden gustar</h2>
