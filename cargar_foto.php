@@ -1,11 +1,7 @@
 <?php
-$host = "localhost";
-$database ="photo_stock";
-$user ="root";
-$pass ="";
-$conexion  = new mysqli($host, $user, $pass, $database);
-/* include_once "conexion.php";  */
-/* $id = $_SESSION['id_usuario']; */
+
+include "controladores/conexion.php";
+
 $id = $_POST["valorid"]; 
 
 try {

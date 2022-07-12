@@ -29,7 +29,7 @@
 	include "resultado_grafico_admin.php"; 
 	?>
 	<a href="resultado_encuesta.php" class="ir_encuesta">Actualizar</a>
-	</center>
+	</center><br><br>
 	</div>
 
 	</div>

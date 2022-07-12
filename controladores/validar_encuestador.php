@@ -1,11 +1,6 @@
 
 <?php 
 
-/* $host = "localhost";
-$database ="photo_stock";
-$user ="root";
-$pass ="";
-$conexion  = new mysqli($host, $user, $pass, $database); */
 include "controladores/conexion.php";
 
 /* include_once "conexion.php";  */
