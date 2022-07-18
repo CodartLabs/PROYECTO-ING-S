@@ -2,7 +2,7 @@
 $host = "localhost";
 $database ="photo_stock";
 $user ="root";
-$pass ="";
+$pass ="root";
 $conexion  = new mysqli($host, $user, $pass, $database);
 
 if ($conexion ->connect_error){

@@ -27,7 +27,8 @@
 	}else{
 		echo '<center><p class="message_encuesta"><span id="check">✓</span> Tu encuesta fue
 		registrada con <b>éxito</b>, muchas gracias por tu consideración</b>.
-	   </p></center>';
+	   </p></center>
+	   ';
 	}
 
 	 ?>

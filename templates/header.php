@@ -35,6 +35,9 @@
       <li class="nav-item">
         <a class="nav-link" href="encuesta.php?profile_id=<?php echo $_SESSION["id_usuario"];?>">Encuesta</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cuestionario.php?profile_id=<?php echo $_SESSION["id_usuario"];?>">Cuestionario</a>
+      </li>
 
     
       <div class="dropdown">

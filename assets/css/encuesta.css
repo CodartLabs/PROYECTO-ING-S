@@ -43,7 +43,7 @@
 
         .button {
 
-			background: red;
+			background: rgb(122, 0, 0);
             border: none;
             color: white;
             padding: 15px 32px;
@@ -119,6 +119,32 @@
   		justify-content: space-around;
 		align-items: center !important;
 	}
+	.papa-escala{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.escala{
+		
+		background-color: #ad0edd;
+		color: white;
+		align-content: center;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+	}
+	td{
+		border: 1px solid white ;
+		text-align: center;
+		width: 40px;
+		
+	}
+	.totalmente{
+		background-color: white;
+		color: black;
+		width: 230px;
+	}
+	
 	table{
 		width: 95%;
 		height: 80%;
@@ -192,6 +218,7 @@
 		width: 90% !important;
 		margin-top: 70px;
 		font-size: 15px;
+		
 	}
 	#check{
 		color: #00F404;
@@ -226,14 +253,25 @@
 	.text-q{
 		text-align: left;
 		font-size: 18px;
-		color: 343a40 ;
+		color: #343a40 ;
 		padding: 5px;
+	}
+	.text-tarea, .text-eficacia{
+		text-align: left;
+		font-size: 18px;
+		color: #343a40 ;
+		padding: 5px;
+		font-weight: bold;
+	}
+	.text-eficacia{
+		color: #ad0edd;
 	}
 
 	#titleQ{
-		color: #007bff;
+		color: #ad0edd;
 	}
 	.titleQ{
 		display: flex;
   		justify-content: center;
+		
 	}
